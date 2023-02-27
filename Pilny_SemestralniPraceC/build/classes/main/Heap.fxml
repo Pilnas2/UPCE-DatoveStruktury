@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.HeapController">
+   <children>
+      <ListView fx:id="LVPamatly" focusTraversable="false" layoutX="114.0" prefHeight="389.0" prefWidth="486.0" />
+      <Button fx:id="btnImport" focusTraversable="false" layoutX="35.0" layoutY="38.0" mnemonicParsing="false" onAction="#onActionButtonImport" text="Import" />
+      <Button fx:id="btnZpristupni" focusTraversable="false" layoutX="14.0" layoutY="87.0" mnemonicParsing="false" onAction="#onActionButtonZpristupni" text="Zpřístupni max" />
+      <Button fx:id="btnZrus" focusTraversable="false" layoutX="45.0" layoutY="137.0" mnemonicParsing="false" onAction="#onActionButtonZrus" text="Zruš" />
+      <Button fx:id="btnVloz" focusTraversable="false" layoutX="45.0" layoutY="182.0" mnemonicParsing="false" onAction="#onActionButtonVloz" text="Vlož" />
+      <Button fx:id="btnOdeberMax" focusTraversable="false" layoutX="24.0" layoutY="229.0" mnemonicParsing="false" onAction="#onActionButtonOdeberMax" text="Odeber Max" />
+      <Label layoutX="438.0" layoutY="409.0" text="Druh prohlídky:" />
+      <Label layoutX="63.0" layoutY="400.0" text="Aktuální poloha:" />
+      <Label layoutX="230.0" layoutY="400.0" text="Změna aktuální polohy" />
+      <Button fx:id="btnZmena" focusTraversable="false" layoutX="265.0" layoutY="427.0" mnemonicParsing="false" onAction="#onActionButtonZmena" text="Změna" />
+      <TextField fx:id="tfAktualniPoloha" layoutX="32.0" layoutY="427.0" onAction="#onActionTextFieldAktualniPoloha" prefHeight="25.0" prefWidth="195.0" />
+      <ComboBox fx:id="cbDruhProhlídky" layoutX="404.0" layoutY="427.0" onAction="#onActionCB" prefWidth="150.0" />
+   </children>
+</AnchorPane>
